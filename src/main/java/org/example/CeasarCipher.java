@@ -1,6 +1,15 @@
+/** Project:Lab5Borrero
+ * Purpose Details: Class encrypts and decrypts string of character in Ceasar Cipher, Brute Force shown for all 25 shifts
+ * Course:IST 242
+ * Author: Jordan Borrero
+ * Date Developed: 3/24/24
+ * Last Date Changed: 3/31/24
+ * Rev:1
+
+ */
 package org.example;
 public class CeasarCipher {
-    public static String encrypt(String plaintext, int shift) {
+    public static String encrypt(String plaintext, int shift) { //encrypts message in Caesar Cipher
         StringBuilder encryptedText = new StringBuilder();
         for (char character : plaintext.toCharArray()) {
             if (Character.isLetter(character)) {
@@ -15,7 +24,7 @@ public class CeasarCipher {
         }
         return encryptedText.toString();
     }
-    public static String decrypt(String encryptedText, int shift) {
+    public static String decrypt(String encryptedText, int shift) { // decrypts message
         StringBuilder decryptedText = new StringBuilder();
         for (char character : encryptedText.toCharArray()) {
             if (Character.isLetter(character)) {
@@ -30,7 +39,7 @@ public class CeasarCipher {
         }
         return decryptedText.toString();
     }
-    public static void bruteForceDecrypt(String encryptedText) {
+    public static void bruteForceDecrypt(String encryptedText) { //writes brute force for all 25 character shifts
         for (int shift = 0; shift < 26; shift++) {
             StringBuilder decryptedText = new StringBuilder();
             for (char character : encryptedText.toCharArray()) {

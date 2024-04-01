@@ -1,3 +1,12 @@
+/** Project:Lab5Borrero
+ * Purpose Details: Main class that converts English String to new alphabet, displays hash value, uses Caesar Cipher to perform 5 character shift, and writes brute force for all 25 shifts of new alphabet string
+ * Course:IST 242
+ * Author: Jordan Borrero
+ * Date Developed: 3/24/24
+ * Last Date Changed: 3/31/24
+ * Rev:1
+
+ */
 package org.example;
 
 import java.security.NoSuchAlgorithmException;

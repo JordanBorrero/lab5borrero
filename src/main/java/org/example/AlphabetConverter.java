@@ -1,7 +1,16 @@
+/** Project:Lab5Borrero
+ * Purpose Details: Converts String of characters to a Custom Alphabet
+ * Course:IST 242
+ * Author: Jordan Borrero
+ * Date Developed: 3/24/24
+ * Last Date Changed: 3/31/24
+ * Rev:1
+
+ */
 package org.example;
 import java.util.HashMap;
 public class AlphabetConverter {
-    public static String convertToCustom(String text) {
+    public static String convertToCustom(String text) { //Converts English String to custom alphabet using provided characters
         HashMap<Character, String> customCodeMap = new HashMap<>();
         customCodeMap.put('A', "*"); customCodeMap.put('B', "&"); customCodeMap.put('C', "^");
         customCodeMap.put('D', "%"); customCodeMap.put('E', "$"); customCodeMap.put('F', "#");
@@ -23,7 +32,7 @@ public class AlphabetConverter {
         }
         return morseCodeBuilder.toString().trim();
     }
-    public static String convertFromCustom(String text) {
+    public static String convertFromCustom(String text) { // Converts custom alphabet back to English
         HashMap<String, Character> customToCharMap = new HashMap<>();
         customToCharMap.put("*", 'A'); customToCharMap.put("&", 'B'); customToCharMap.put("^", 'C');
         customToCharMap.put("%", 'D'); customToCharMap.put("$", 'E'); customToCharMap.put("#", 'F');
