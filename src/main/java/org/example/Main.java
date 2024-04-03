@@ -31,7 +31,7 @@ public class Main {
             System.out.println("Error: SHA-256 algorithm not available.");
         }
 // Encrypt original English string with Caesar cipher using a 5-character shift
-        String encryptedString = CeasarCipher.encrypt(englishString, 5);
+        java.lang.String encryptedString = CeasarCipher.encrypt(englishString, 5);
         System.out.println("Caesar Cipher encrypted string: " + encryptedString);
 // Decrypt Caesar cipher encrypted string
         String decryptedString = CeasarCipher.decrypt(encryptedString, 5);
